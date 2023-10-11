@@ -1,174 +1,181 @@
-/* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* Style the navigation links */
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hover effect for links */
+a:hover {
+  text-decoration: underline;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    color: #fff;
-    padding: 10px 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  padding: 0 10px 0 0;
+
+  background-color: lightblue;
+  color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .icon img {
-    max-width: 100px; 
-    height: auto; 
-    margin-right: 20px; 
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+  width: 100px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 .menu ul li a {
-    text-decoration: none;
-    color: burlywood;
-    font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-header {
-    background-image: url('malaysia-header.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 150px 0;
-    position: relative;
-}
-
-header::before {
-    content: '';
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .attraction {
-    display: flex;
-    justify-content: space-between;
-    margin: 120px;
-    padding: 120px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out
-    
+  display: flex;
+  justify-content: space-between;
+  margin: 120px;
+  padding: 120px;
+  background-color: lightblue;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
 .attraction:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .attraction-info {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .btn {
-    display: inline-block;
-    background-color: #ff8c00;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background-color: #ff6f00;
+  background-color: #ff6f00;
 }
 
 .attraction-image {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
-    .attraction {
-        flex-direction: column;
-        align-items: center;
-    }
-    .attraction-info,
-    .attraction-image {
-        flex: 1;
-        width: 100%;
-        height: a 50px;;
-    }
-    .attraction-info {
-        text-align: center;
-    }
+  .attraction {
+    flex-direction: column;
+    align-items: center;
+  }
+  .attraction-info,
+  .attraction-image {
+    flex: 1;
+    width: 100%;
+    height: a 50px;
+  }
+  .attraction-info {
+    text-align: center;
+  }
 }
 
 /* Video Background Styles */
 /* Add this to your existing CSS file or create a new one for video background styles */
 
 .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Ensures it's behind the content */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Ensures it's behind the content */
 }
 
 iframe {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .content {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
-
-
