@@ -7,6 +7,12 @@ body {
 ul {
 	list-style: none;
 	display: flex;
+	font-size: 18px;
+
+	margin-left: 20px;
+	font-size: 18px;
+	padding: 20px;
+	list-style-type: disc;
 }
 
 li {
@@ -75,6 +81,11 @@ a:hover {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 38px;
 }
 
 .cta {
@@ -97,6 +108,7 @@ a:hover {
 .sec-2 {
 	text-align: center;
 	padding: 50px 0;
+	margin-bottom: 250px;
 }
 .souv-container {
 	width: 100%;
@@ -122,7 +134,7 @@ a:hover {
 	opacity: 1;
 }
 .card-cover {
-	width: 220px;
+	width: 260px;
 	height: 200px;
 	position: relative;
 	margin-top: -60px;
@@ -178,7 +190,7 @@ a:hover {
 	justify-content: space-between;
 }
 
-.card {
+.cards {
 	width: 30%;
 	border: 1px solid #ccc;
 	border-radius: 8px;
@@ -186,9 +198,14 @@ a:hover {
 	text-align: center;
 	padding: 10px;
 	margin: 10px;
+	background: #bde9ec;
+	width: 260px;
+	padding: 20px;
+	margin: 30px;
+	justify-self: start;
 }
 
-.card img {
+.cards img {
 	max-width: 100%;
 	max-height: 300px;
 	border-radius: 8px 8px 0 0;
@@ -206,4 +223,13 @@ a:hover {
 .card-details p {
 	font-size: 1rem;
 	margin: 0;
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background: #bde9ec;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
 }
